@@ -2,3 +2,12 @@
 
 /node_modules/
 .DS_Store
+
+# Vite
+dist
+dist-ssr
+*.local
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
