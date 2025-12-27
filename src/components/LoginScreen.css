@@ -1,0 +1,153 @@
+/* 기본 스타일 리셋 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 로그인 페이지 전체 */
+.login-page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* 로그인 컨테이너 */
+.login-container {
+  width: 100%;
+  max-width: 486px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* 로고 */
+.logo {
+  font-size: 48px;
+  color: #0d57a7;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: normal;
+}
+
+.logo-bold {
+  font-weight: bold;
+}
+
+/* 폼 그룹 */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 11px;
+  color: black;
+}
+
+.form-group input {
+  width: 100%;
+  height: 45px;
+  padding: 0 15px;
+  background-color: #dddddd;
+  border: none;
+  border-radius: 28.5px;
+  font-size: 16px;
+  color: black;
+  box-shadow: inset 0px 4px 3.3px 0px rgba(0, 0, 0, 0.14);
+  outline: none;
+  transition: background-color 0.3s;
+  font-family: inherit;
+}
+
+.form-group input::placeholder {
+  color: #777777;
+}
+
+.form-group input:focus {
+  background-color: #d0d0d0;
+}
+
+/* 로그인 버튼 */
+.login-button {
+  width: 100%;
+  max-width: 486px;
+  height: 45px;
+  background-color: #0d57a7;
+  color: white;
+  border: none;
+  border-radius: 28.5px;
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: inset 0px 4px 3.3px 0px rgba(0, 0, 0, 0.14);
+  transition: background-color 0.3s, transform 0.1s;
+  font-family: inherit;
+  margin-top: 15px;
+}
+
+.login-button:hover {
+  background-color: #0a4585;
+}
+
+.login-button:active {
+  transform: scale(0.98);
+}
+
+/* 회원가입 텍스트 */
+.signup-text {
+  font-size: 14px;
+  color: black;
+  text-align: left;
+  margin-top: 8px;
+}
+
+.signup-link {
+  color: #0d57a7;
+  cursor: pointer;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}
+
+/* 반응형 디자인 - 모바일 */
+@media (max-width: 576px) {
+  .logo {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+
+  .login-button {
+    width: 100%;
+  }
+
+  .form-group label {
+    font-size: 15px;
+  }
+
+  .form-group input {
+    font-size: 15px;
+  }
+}
+
+/* 작은 화면 */
+@media (max-width: 400px) {
+  .login-container {
+    gap: 20px;
+  }
+
+  .logo {
+    font-size: 32px;
+  }
+}
